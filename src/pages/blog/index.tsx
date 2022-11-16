@@ -48,6 +48,10 @@ export async function getStaticProps({ preview }) {
 }
 
 const Index = ({ posts = [], preview }) => {
+  const posts_list = posts.sort(function (a, b) {
+    return b.Date - a.Date
+  })
+
   return (
     <>
       <Header titlePre="Blog" />
@@ -69,7 +73,7 @@ const Index = ({ posts = [], preview }) => {
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
-        {posts.map((post) => {
+        {posts_list.map((post) => {
           return (
             <div className={blogStyles.postPreview} key={post.Slug}>
               <h3>
