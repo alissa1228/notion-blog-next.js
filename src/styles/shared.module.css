@@ -2,7 +2,9 @@
   margin: auto;
   max-width: 98%;
   display: block;
-  height: auto;
+  /* height: auto; */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .layout h1,

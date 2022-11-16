@@ -22,12 +22,15 @@
 }
 
 .header :global(a.active) {
-  color: #0070f3;
+  color: #064420;
+  background-color: #faf1e6;
   font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
   .header {
-    padding: .5em 0 2em;
+    padding: 0.5em 0 2em;
   }
 }

@@ -8,10 +8,9 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Home', page: '/' },
   { label: 'Blog', page: '/blog' },
   { label: 'Contact', page: '/contact' },
-  { label: 'Source Code', link: 'https://github.com/ijjk/notion-blog' },
 ]
 
-const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
+// const ogImageUrl = 'https://notion-blog.now.sh/blog_thumbnail.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
@@ -19,16 +18,15 @@ const Header = ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} My Notion Blog</title>
+        <title>
+          {titlePre ? `${titlePre} |` : ''} Jungmin Yoon | FrontEnd Developer
+        </title>
         <meta
           name="description"
-          content="An example Next.js site using Notion for the blog"
+          content="뚜벅뚜벅 걸어가는 프론트엔드 개발자"
         />
-        <meta name="og:title" content="My Notion Blog" />
-        <meta property="og:image" content={ogImageUrl} />
-        <meta name="twitter:site" content="@_ijjk" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={ogImageUrl} />
+        <meta name="og:title" content="Jungmin Yoon | FrontEnd Developer" />
+        <meta property="og:image" content={'../../public/blog_thumbnail.png'} />
       </Head>
       <ul>
         {navItems.map(({ label, page, link }) => (
