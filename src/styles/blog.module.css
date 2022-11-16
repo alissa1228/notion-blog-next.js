@@ -6,6 +6,12 @@
   margin-bottom: 50px;
 }
 
+.blogIndex h1 span {
+  font-size: 15px;
+  font-weight: 200;
+  margin-left: 10px;
+}
+
 .previewAlertContainer {
   display: flex;
   justify-content: center;
@@ -161,6 +167,7 @@
 
 .bookmarkContents {
   user-select: none;
+  -webkit-user-select: none;
   cursor: pointer;
   width: 100%;
   display: flex;
