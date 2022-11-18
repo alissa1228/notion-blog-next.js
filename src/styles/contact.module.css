@@ -24,7 +24,12 @@
 }
 
 .avatar img {
+  margin: auto;
+  max-width: 98%;
   height: 120px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
 }
 
 .name {
@@ -33,4 +38,17 @@
 
 .name a {
   color: inherit;
+}
+
+.title {
+  margin: 0;
+}
+
+.buymecoffee {
+  margin: 20px 0 30px;
+}
+
+.buymecoffee a img {
+  border-radius: 0;
+  width: 200px;
 }

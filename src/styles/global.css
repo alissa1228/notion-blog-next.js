@@ -260,6 +260,25 @@ pre.dark[class*='language-'] {
   line-height: 28px;
 }
 
+.main-post h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.main-post h4 a {
+  color: var(--point);
+  transition: all 200ms linear;
+}
+
+.main-post h4 a:hover {
+  color: var(--accent-2);
+}
+.main-post p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
 figure {
   font-size: 0.85rem;
   color: #999;
