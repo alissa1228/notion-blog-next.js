@@ -10,7 +10,6 @@ import {
   postIsPublished,
 } from '../../lib/blog-helpers'
 import { textBlock } from '../../lib/notion/renderers'
-import getNotionUsers from '../../lib/notion/getNotionUsers'
 import getBlogIndex from '../../lib/notion/getBlogIndex'
 
 export async function getStaticProps({ preview }) {
@@ -31,12 +30,6 @@ export async function getStaticProps({ preview }) {
       return post
     })
     .filter(Boolean)
-
-  const { users } = await getNotionUsers([...authorsToGet])
-
-  posts.map((post) => {
-    post.Authors = post.Authors.map((id) => users[id].full_name)
-  })
 
   return {
     props: {
@@ -86,11 +79,8 @@ const Index = ({ posts = [], preview }) => {
                   </Link>
                 </span>
               </h3>
-              {post.Authors.length > 0 && (
-                <div className="authors">By: {post.Authors.join(' ')}</div>
-              )}
               {post.Date && (
-                <div className="posted">Posted: {getDateStr(post.Date)}</div>
+                <div className="posted">{getDateStr(post.Date)}</div>
               )}
               <p>
                 {(!post.preview || post.preview.length === 0) &&

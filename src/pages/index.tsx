@@ -2,8 +2,8 @@ import Header from '../components/header'
 import sharedStyles from '../styles/shared.module.css'
 import Link from 'next/link'
 import { getBlogLink, postIsPublished } from '../lib/blog-helpers'
-import { useRouter } from 'next/router'
 import getBlogIndex from '../lib/notion/getBlogIndex'
+import getNotionUsers from '../lib/notion/getNotionUsers'
 import { textBlock } from '../lib/notion/renderers'
 import blogStyles from '..//styles/blog.module.css'
 
@@ -52,18 +52,18 @@ export default function Index({ posts = [], preview }) {
           <h3>About</h3>
           <ul>
             <li>
-              전자책을 만들다 기술을 배워가는 재미를 쫓다보니 개발자가
+              💻 전자책을 만들다 기술을 배워가는 재미를 쫓다보니 개발자가
               되었습니다.
             </li>
             <li>
-              새로운 기술 스택을 배우는 걸 두려워하지 않으며 배움을 즐기고자
+              ✏️ 새로운 기술 스택을 배우는 걸 두려워하지 않으며 배움을 즐기고자
               합니다.
             </li>
             <li>
-              문서화와 공유를 통해 업무 효율을 높이는 일과 UI/UX 개선에 관심이
+              🗂 문서화와 공유를 통해 업무 효율을 높이는 일과 UI/UX 개선에 관심이
               많습니다.
             </li>
-            <li>영화, 뮤지컬 등 문화 콘텐츠에도 관심이 많습니다.</li>
+            <li>👩🏻‍💻 React 기반 개발을 중심으로 하고 있습니다</li>
           </ul>
         </div>
 

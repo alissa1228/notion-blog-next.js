@@ -127,6 +127,8 @@
 
 .postPreview :global(.posted) {
   margin-bottom: 0.5em;
+  font-size: 17px;
+  margin-top: 4px;
 }
 
 .post {
