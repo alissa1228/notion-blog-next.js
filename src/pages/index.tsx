@@ -46,24 +46,13 @@ export default function Index({ posts = [], preview }) {
       <div className={sharedStyles.layout}>
         <img src="/alissa.jpg" height="120" width="120" alt="alissa_profile" />
         <h1>Jungmin Yoon</h1>
-        <h2>Front-End Developer 🚶‍♀️</h2>
+        <h2>Writing Archive🚶‍♀️</h2>
 
         <div className="explanation">
           <h3>About</h3>
           <ul>
-            <li>
-              💻 전자책을 만들다 기술을 배워가는 재미를 쫓다보니 개발자가
-              되었습니다.
-            </li>
-            <li>
-              ✏️ 새로운 기술 스택을 배우는 걸 두려워하지 않으며 배움을 즐기고자
-              합니다.
-            </li>
-            <li>
-              🗂 문서화와 공유를 통해 업무 효율을 높이는 일과 UI/UX 개선에 관심이
-              많습니다.
-            </li>
-            <li>👩🏻‍💻 React 기반 개발을 중심으로 하고 있습니다</li>
+            <li>📔 보고 읽은 걸 기록하는 공간입니다.</li>
+            <li>✏️ 2014~현재까지의 글을 담았습니다.</li>
           </ul>
         </div>
 

@@ -9,16 +9,16 @@ import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
 const contacts = [
-  {
-    Comp: GitHub,
-    alt: 'github icon',
-    link: 'https://github.com/alissa1228',
-  },
-  {
-    Comp: LinkedIn,
-    alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/yoon-jungmin-6a8747229/',
-  },
+  // {
+  //   Comp: GitHub,
+  //   alt: 'github icon',
+  //   link: 'https://github.com/alissa1228',
+  // },
+  // {
+  //   Comp: LinkedIn,
+  //   alt: 'linkedin icon',
+  //   link: 'https://www.linkedin.com/in/yoon-jungmin-6a8747229/',
+  // },
   {
     Comp: Envelope,
     alt: 'envelope icon',
