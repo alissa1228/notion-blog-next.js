@@ -39,7 +39,6 @@ export default function Index({ posts = [], preview }) {
   const posts_list = posts.sort(function (a, b) {
     return b.Date - a.Date
   })
-
   return (
     <>
       <Header titlePre="Home" />
