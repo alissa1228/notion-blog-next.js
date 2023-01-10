@@ -31,9 +31,12 @@ export default function Contact() {
     <>
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
-        <div className={contactStyles.avatar}>
-          <img src="/crocodile.png" alt="avatar_croco" height={60} />
-        </div>
+        <img
+          src="/alissa.jpg"
+          alt="avatar_sunflower"
+          height="120"
+          width="120"
+        />
 
         <h1 className={contactStyles.title}>Contact Me</h1>
 

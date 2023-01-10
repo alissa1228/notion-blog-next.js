@@ -148,6 +148,8 @@
   margin: 0 auto 30px;
   padding: 5%;
   background-color: #fff;
+  border: 1px solid #064420;
+  border-radius: 10px;
 }
 
 .post :global(hr) {
