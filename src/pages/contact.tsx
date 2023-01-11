@@ -9,11 +9,11 @@ import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
 const contacts = [
-  // {
-  //   Comp: GitHub,
-  //   alt: 'github icon',
-  //   link: 'https://github.com/alissa1228',
-  // },
+  {
+    Comp: GitHub,
+    alt: 'github icon',
+    link: 'https://github.com/alissa1228',
+  },
   // {
   //   Comp: LinkedIn,
   //   alt: 'linkedin icon',
@@ -31,13 +31,6 @@ export default function Contact() {
     <>
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
-        <img
-          src="/alissa.jpg"
-          alt="avatar_sunflower"
-          height="120"
-          width="120"
-        />
-
         <h1 className={contactStyles.title}>Contact Me</h1>
 
         <div className={contactStyles.links}>
