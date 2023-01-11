@@ -44,7 +44,13 @@ export default function Index({ posts = [], preview }) {
     <>
       <Header titlePre="Home" />
       <div className={sharedStyles.layout}>
-        <img src="/alissa.jpg" height="120" width="120" alt="alissa_profile" />
+        <img
+          src="https://notion-avatar.vercel.app/api/img/eyJmYWNlIjo2LCJub3NlIjoxMSwibW91dGgiOjEsImV5ZXMiOjksImV5ZWJyb3dzIjo0LCJnbGFzc2VzIjowLCJoYWlyIjo1NCwiYWNjZXNzb3JpZXMiOjEzLCJkZXRhaWxzIjowLCJiZWFyZCI6MCwiZmxpcCI6MCwiY29sb3IiOiIjZmFkYjE0Iiwic2hhcGUiOiJzcXVhcmUifQ=="
+          alt="notion avatar"
+          height="120"
+          width="120"
+        />
+        {/* <img src="/alissa.jpg" height="120" width="120" alt="alissa_profile" /> */}
         <h1>Jungmin Yoon</h1>
         <h2>Writing Archive🚶‍♀️</h2>
 
