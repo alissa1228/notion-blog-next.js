@@ -19,14 +19,16 @@ const Header = ({ titlePre = '' }) => {
     <header className={styles.header}>
       <Head>
         <title>
-          {titlePre ? `${titlePre} |` : ''} Jungmin Yoon | FrontEnd Developer
+          {titlePre ? `${titlePre} |` : ''} Jungmin Yoon | Just Write!
         </title>
+        <meta name="description" content="이것저것 글을 씁니다." />
+        <meta name="og:title" content="Jungmin Yoon | Just Write!" />
         <meta
-          name="description"
-          content="뚜벅뚜벅 걸어가는 프론트엔드 개발자"
+          property="og:image"
+          content={
+            'https://notion-avatar.vercel.app/api/img/eyJmYWNlIjo2LCJub3NlIjoxMSwibW91dGgiOjEsImV5ZXMiOjksImV5ZWJyb3dzIjo0LCJnbGFzc2VzIjowLCJoYWlyIjo1NCwiYWNjZXNzb3JpZXMiOjEzLCJkZXRhaWxzIjowLCJiZWFyZCI6MCwiZmxpcCI6MCwiY29sb3IiOiIjZmFkYjE0Iiwic2hhcGUiOiJzcXVhcmUifQ=='
+          }
         />
-        <meta name="og:title" content="Jungmin Yoon | FrontEnd Developer" />
-        <meta property="og:image" content={'../../public/blog_thumbnail.png'} />
       </Head>
       <ul>
         {navItems.map(({ label, page, link }) => (
